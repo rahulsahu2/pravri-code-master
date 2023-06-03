@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        margin: 10px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+      .logo-img {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="height: 90vh; padding: 1rem; display: flex">
+      <div style="width: 100%; padding: 1rem; max-width: 100%; overflow: hidden">
+        <img
+          class="logo-img"
+          src="https://s3.ap-south-1.amazonaws.com/cdncontentdualite.com/Unnecessary/images/logo.png"
+          alt="logo"
+        />
+        <p style="max-width: 70%">
+          B23, Shanti Shopping Centre, Mira Road East, Thane - 401107
+        </p>
+        <p>Phone: 9920663580</p>
+        <p>Email: kdpragency@gmail.com</p>
+        <p>GSTIN: 27AJVPD1691G1ZX</p>
+        
+      </div>
+      <div style="padding: 1rem; width: 100%">
+        <h1>Invoice Recipt</h1>
+        <div>
+          <div style="display: flex; justify-content: space-between">
+            <span>Date-Time:</span>
+            <span>{{releaseTime}}</span>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <span>Invoice Number:</span>
+            <span>{{invoiceNumber}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
