@@ -41,6 +41,8 @@ import { getProductsCounts } from "../Controller/products/get-products-counts.js
 import { editProductData } from "../Controller/products/editProductData.js";
 import { addOptions } from "../Controller/products/add-options.js";
 
+import { getActiveRoleMenu, getAllMenu, getAllRoles, getRoleMenu, updateRoleMenu } from "../Controller/roles/role-controller.js";
+
 
 const __dirname = path.resolve();
 
@@ -58,6 +60,14 @@ Router.post("/login", loginUser)
 Router.post("/forgot-password", sendResetLink);
 Router.get("/forgot-password/:id/:token", verifyResetLink);
 Router.put("/reset-password", [auth], resetPassword)
+
+//menu-controls
+Router.get("/getAllRoles",[auth],getAllRoles)
+Router.get("/getMenuData",[auth],getAllMenu)
+Router.get("/getActiveMenuData/:role",[auth],getActiveRoleMenu)
+Router.get("/getMenuData/:role",[auth],getRoleMenu)
+Router.post("/updateRoleMenu",[auth],updateRoleMenu)
+
 
 // Users API
 
